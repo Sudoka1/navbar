@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rounded Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa; 
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 50px; 
+      margin: 10px; 
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .navbar .logo img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar .menu a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    .navbar .menu a:hover {
+      color: #007BFF;
+    }
+
+    .navbar .cta {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .navbar .cta a {
+      text-decoration: none;
+      font-size: 1em;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .navbar .cta .login {
+      color: #000;
+    }
+
+    .navbar .cta .get-started {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .navbar .cta .get-started:hover {
+      background-color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <img src="/logo.png" alt="Logo">
+    Lernfiction
+  </div>
+  <div class="menu">
+    <a href="#">Product</a>
+    <a href="#">Resources</a>
+    <a href="#">Pricing</a>
+  </div>
+  <div class="cta">
+    <a href="#" class="login">Login</a>
+    <!-- <a href="#" class="get-started">Get started for free</a> -->
+  </div>
+</div>
+
+</body>
+</html>
